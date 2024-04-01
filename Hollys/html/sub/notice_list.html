@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="할리스커피 반응형 페이지입니다.">
+    <link rel="shortcut icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
+
+    <title>할리스커피 - 메뉴페이지</title>
+
+    <!-- Library CSS -->
+    <link rel="stylesheet" href="../../assets/lib/swiper/css/swiper.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+    <!-- Library JS -->
+    <script src="../../assets/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/lib/swiper/js/swiper.min.js"></script>
+
+    <!-- JS -->
+    <script src="../../assets/js/hollys.front.ui.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-wrapper">
+            <div class="header-inner">
+                <h1 class="logo">
+                    <a href="../main/main.html" title="할리스 첫화면으로 이동">
+                        <img src="../../assets/images/common/hollys_logo.png" alt="HOLLYS COFFEE">
+                    </a>
+                </h1>
+                <!-- // logo -->
+                <nav class="gnb-wrap">
+                    <ul class="gnb-list">
+                        <li class="gnb-item">
+                            <a href="javascript:" class="gnb-link"><span class="name">할리스 소개</span></a>
+                            <ul class="sub-list">
+                                <li class="sub-item">
+                                    <a href="javascript:" class="sub-link">브랜드</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="javascript:" class="sub-link">할리스 위치 및 연락처</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="javascript:" class="sub-link">채용안내</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="javascript:" class="sub-link">가맹문의 및 절차</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="../sub/prod_list.html" class="gnb-link"><span class="name">메뉴</span></a>
+                            <ul class="sub-list">
+                                <li class="sub-item">
+                                    <a href="../sub/prod_list.html" class="sub-link">COFFEE</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="javascript:" class="sub-link">라떼 · 초콜릿 · 티</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="javascript:" class="sub-link">할리치노 · 빙수</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="javascript:" class="sub-link">스무디 · 주스</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="javascript:" class="sub-link">스파클링</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="javascript:" class="sub-link">푸드</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="javascript:" class="gnb-link"><span class="name">매장</span></a>
+                            <ul class="sub-list">
+                                <li class="sub-item">
+                                    <a href="javascript:" class="sub-link">매장찾기</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb-item">
+                            <a href="../sub/notice_list.html" class="gnb-link"><span class="name">할리스 소식</span></a>
+                            <ul class="sub-list">
+                                <li class="sub-item">
+                                    <a href="../sub/notice_list.html" class="sub-link">공지사항</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="../sub/event_list.html" class="sub-link">이벤트</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- // gnb-wrap -->
+                <div class="right-wrap">
+                    <ul class="sns-list">
+                        <li class="sns-item">
+                            <a href="javascript:" class="sns-link" title="페이스북">
+                                <img src="../../assets/images/common/sns_facebook.png" alt="페이스북">
+                            </a>
+                        </li>
+                        <li class="sns-item">
+                            <a href="javascript:" class="sns-link" title="인스타그램">
+                                <img src="../../assets/images/common/sns_instagram.png" alt="인스타그램">
+                            </a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn-menu-open">
+                        <span class="offscreen">메뉴 열기</span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+                <!-- // right-wrap -->
+                <!-- MO 전용 메뉴 - allmenu-wrap -->
+                <div class="allmenu-wrap">
+                    <div class="allmenu-content">
+                        <div class="allmenu">
+                            <ul class="menu">
+                                <li class="menu-item">
+                                    <a role="button" href="javascript:">할리스 소개</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a href="javascript:">브랜드</a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="javascript:">할리스 위치 및 연락처</a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="javascript:">채용안내</a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="javascript:">가맹문의 및 절차</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a role="button" href="javascript:">메뉴</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a href="../sub/prod_list.html">COFFEE</a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="javascript:">라떼 · 초콜릿 · 티</a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="javascript:">할리치노 · 빙수</a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="javascript:">스무디 · 주스</a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="javascript:">스파클링</a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="javascript:">푸드</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a role="button" href="javascript:">매장</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a href="javascript:">매장찾기</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a role="button" href="javascript:">할리스 소식</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a href="../sub/notice_list.html">공지사항</a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="../sub/event_list.html">이벤트</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- // allmenu -->
+                        <div class="sns">
+                            <ul class="sns-list">
+                                <li class="sns-item">
+                                    <a href="javascript:" class="sns-link" title="페이스북">
+                                        <img src="../../assets/images/common/sns_facebook_white.png" alt="페이스북">
+                                    </a>
+                                </li>
+                                <li class="sns-item">
+                                    <a href="javascript:" class="sns-link" title="인스타그램">
+                                        <img src="../../assets/images/common/sns_instagram_white.png" alt="인스타그램">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- // sns -->
+                    </div>
+                    <button type="button" class="btn-menu-close">
+                        <span class="offscreen">메뉴 닫기</span>
+                    </button>
+                    <!-- // btn-menu-close -->
+                </div>
+                <!-- // MO 전용 메뉴 - allmenu-wrap -->
+            </div>
+        </header>
+        <!-- // header-wrapper -->
+        <main class="container-wrapper">
+            <section class="breadcrumb-wrap">
+                <h2 class="offscreen">할리스 네비</h2>
+                <div class="breadcrumb-inner">
+                    <ol class="breadcrumb-list">
+                        <li class="breadcrumb-item">
+                            <a href="../main/main.html" class="breadcrumb-link">홈</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="../sub/notice_list.html" class="breadcrumb-link">할리스 소식</a>
+                        </li>
+                        <li class="breadcrumb-item current has-sub">
+                            <button type="button" class="btn-dropdown-menu"><span>공지사항</span></button>
+                            <div class="dropdown-box">
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item active">
+                                        <a href="../sub/notice_list.html" class="dropdown-link">공지사항</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="../sub/event_list.html" class="dropdown-link">이벤트</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <!-- // breadcrumb-wrap -->
+            <section class="contents-wrap">
+                <div class="contents-inner">
+                    <div class="page-title-wrap">
+                        <h2 class="page-title">공지사항</h2>
+                    </div>
+                    <!-- // page-title-wrap -->
+                    <div class="board-search-wrap">
+                        <div class="select-box">
+                            <button type="button" class="btn-select"><span>제목</span></button>
+                            <ul class="option-list">
+                                <li class="option-item">
+                                    <button type="button" class="btn-option"><span>제목</span></button>
+                                </li>
+                                <li class="option-item">
+                                    <button type="button" class="btn-option"><span>내용</span></button>
+                                </li>
+                            </ul>                              
+                        </div>
+                        <div class="search-box">
+                            <div class="form-ip-search">
+                                <input type="search" class="form-ip" placeholder="검색어를 입력하세요." title="검색어 입력">
+                            </div>
+                            <a href="javascript:" class="btn-search"><span class="offscreen">검색</span></a>
+                        </div>
+                    </div>
+                    <!-- // board-search-wrap -->
+                    <div class="board-list-wrap">
+                        <!-- DESC : 최신순 10개씩 출력 -->
+                        <ul class="board-list">
+                            <li class="board-item">
+                                <div class="board-num">100</div>
+                                <div class="board-cont">
+                                    <a href="../sub/notice_detail.html" class="title-link">개인정보 처리 방침 개정 안내</a>
+                                    <span class="date">2024.03.12</span>
+                                </div>
+                            </li>
+                            <li class="board-item">
+                                <div class="board-num">99</div>
+                                <div class="board-cont">
+                                    <a href="../sub/notice_detail.html" class="title-link">개인정보 처리 방침 개정 안내</a>
+                                    <span class="date">2024.03.12</span>
+                                </div>
+                            </li>
+                            <li class="board-item">
+                                <div class="board-num">98</div>
+                                <div class="board-cont">
+                                    <a href="../sub/notice_detail.html" class="title-link">개인정보 처리 방침 개정 안내</a>
+                                    <span class="date">2024.03.12</span>
+                                </div>
+                            </li>
+                            <li class="board-item">
+                                <div class="board-num">97</div>
+                                <div class="board-cont">
+                                    <a href="../sub/notice_detail.html" class="title-link">개인정보 처리 방침 개정 안내</a>
+                                    <span class="date">2024.03.12</span>
+                                </div>
+                            </li>
+                            <li class="board-item">
+                                <div class="board-num">96</div>
+                                <div class="board-cont">
+                                    <a href="../sub/notice_detail.html" class="title-link">개인정보 처리 방침 개정 안내</a>
+                                    <span class="date">2024.03.12</span>
+                                </div>
+                            </li>
+                            <li class="board-item">
+                                <div class="board-num">95</div>
+                                <div class="board-cont">
+                                    <a href="../sub/notice_detail.html" class="title-link">개인정보 처리 방침 개정 안내</a>
+                                    <span class="date">2024.03.12</span>
+                                </div>
+                            </li>
+                            <li class="board-item">
+                                <div class="board-num">94</div>
+                                <div class="board-cont">
+                                    <a href="../sub/notice_detail.html" class="title-link">개인정보 처리 방침 개정 안내</a>
+                                    <span class="date">2024.03.12</span>
+                                </div>
+                            </li>
+                            <li class="board-item">
+                                <div class="board-num">93</div>
+                                <div class="board-cont">
+                                    <a href="../sub/notice_detail.html" class="title-link">개인정보 처리 방침 개정 안내</a>
+                                    <span class="date">2024.03.12</span>
+                                </div>
+                            </li>
+                            <li class="board-item">
+                                <div class="board-num">92</div>
+                                <div class="board-cont">
+                                    <a href="../sub/notice_detail.html" class="title-link">개인정보 처리 방침 개정 안내</a>
+                                    <span class="date">2024.03.12</span>
+                                </div>
+                            </li>
+                            <li class="board-item">
+                                <div class="board-num">91</div>
+                                <div class="board-cont">
+                                    <a href="../sub/notice_detail.html" class="title-link">개인정보 처리 방침 개정 안내</a>
+                                    <span class="date">2024.03.12</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- // board-list-wrap -->
+                    <div class="pagination">
+                        <!-- DESC : 페이징 버튼 비활성화 클래스 - [ .disabled ] -->
+                        <a href="javascript:" class="page-link first disabled"><span>처음</span></a>
+                        <a href="javascript:" class="page-link prev disabled"><span>이전</span></a>
+                        <!-- DESC : 페이징 버튼 현위치 클래스 - [ .current ] -->
+                        <a href="javascript:" class="page-link current"><span>1</span></a>
+                        <a href="javascript:" class="page-link"><span>2</span></a>
+                        <a href="javascript:" class="page-link"><span>3</span></a>
+                        <a href="javascript:" class="page-link"><span>4</span></a>
+                        <a href="javascript:" class="page-link"><span>5</span></a>
+                        <a href="javascript:" class="page-link next"><span>다음</span></a>
+                        <a href="javascript:" class="page-link last"><span>마지막</span></a>
+                    </div>
+                    <!-- // pagination -->
+                </div>
+            </section>
+            <!-- // contents-wrap -->
+        </main>
+        <!-- // container-wrapper -->
+        <footer class="footer-wrapper">
+            <div class="footer-inner">
+                <div class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-menu-item privacy">
+                            <a href="../sub/notice_detail.html" class="footer-menu-link">개인정보처리방침</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="javascript:" class="footer-menu-link">서비스이용약관</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="javascript:" class="footer-menu-link">고객문의</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="javascript:" class="footer-menu-link">고객설문</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="javascript:" class="footer-menu-link">사이트맵</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="javascript:" class="footer-menu-link">BI 소개</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // footer-menu -->
+                <address class="company-info">
+                    <span class="info-text">법인명: (주) 케이지할리스에프앤비</span>
+                    <span class="info-text">대표자: 이종현 사업자등록번호 211-87-61044</span>
+                    <span class="info-text">통신판매업: 제2019-서울종로-0193호</span>
+                    <br>
+                    <span class="info-text">주소 : 서울특별시 중구 통일로 92, 9층(순화동, 케이지타워)</span>
+                    <span class="info-text">대표전화 : 02-2188-7100 (가맹문의 : 02-6350-7229)</span>
+                </address>
+                <!-- // company-info -->
+                <p class="copyright">COPYRIGHT (C) KG HOLLYS F&B. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <!-- // footer-wrapper -->
+        <div class="floating-wrapper">
+            <button class="btn-go-top">
+                <span class="ico-arrow-up">
+                    <span class="offscreen">최상위 화면으로 이동</span>
+                </span>
+            </button>
+        </div>
+        <!-- // floating-wrapper -->
+    </div>
+    <!-- // wrapper -->
+</body>
+</html>
