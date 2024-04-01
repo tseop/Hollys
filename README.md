@@ -5,4 +5,7 @@
 
 기술 스택 - HTML, CSS, jQuery, Javascript<br>기여도 - 100%<br>https://tseop.github.io/Hollys/Hollys/html/main/main.html
 
+## Main
+### 메인페이지에 신메뉴에 대한 콘텐츠 영역을 추가하였으며 전체적으로 기존의 페이지보다 직관적으로 영역을 구성하였습니다. Swiper, 스크롤 애니메이션 기능을 구현하여 보다 동적으로 페이지를 제작하였습니다.
+
 
